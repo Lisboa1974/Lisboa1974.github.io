@@ -1,0 +1,34 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>26 de Abril de 1974 (e dias seguintes)</title>
+
+</head>
+<body>
+    <div>
+        <img id="foto" class="center" src="./Maio74/1maio74_1.jpg" width="800" alt="">
+        <p class="alright" onclick="nova_foto()">Seguinte</p>
+    </div>
+    <script>
+        
+        var foto_ini = 1;
+        var foto_final = 2;
+        var foto_actual = foto_ini;
+        function nova_foto() {
+            foto_actual++;
+            if(foto_actual <= foto_final) {
+                document.getElementById("foto").src = "." + "/Maio74/1maio74_" + foto_actual + ".jpg";
+            } else {
+                foto_actual = 1;
+                document.getElementById("foto").src = "." + "/Maio74/1maio74_" + foto_actual + ".jpg";
+            }
+        }
+    
+
+        
+    </script>
+</body>
+</html>
