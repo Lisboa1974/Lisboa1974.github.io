@@ -19,13 +19,22 @@
         var foto_actual = foto_ini;
         function nova_foto() {
             foto_actual++;
+            var img = document.getElementById("foto");            
+            /*if (img.height > 1000) {
+                    img.style.height = (img.height / 2) + "px";
+                    img.style.width = (img.width / 2) + "px";   
+                }*/
+            img.src = "." + "/Maio74/1maio74_" + foto_actual + ".jpg";
             if(foto_actual <= foto_final) {
-                document.getElementById("foto").src = "." + "/Maio74/1maio74_" + foto_actual + ".jpg";
+                console.log("Keep going...")
             } else {
                 foto_actual = 1;
                 document.getElementById("foto").src = "." + "/Maio74/1maio74_" + foto_actual + ".jpg";
             }
+            
         }
+
+        
     
 
         

@@ -22,9 +22,11 @@ p {
     margin-left: auto;
     margin-right: auto;
     /*width: 50%;*/
+    margin-top: 150px;
 }
 
 .alright {
     text-align: right;
     margin-right: 150px;
 }
+
